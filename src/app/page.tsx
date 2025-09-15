@@ -331,7 +331,7 @@ export default function Home() {
               </section>
                 {/* Contact Section */}
               <section id="contact" className="py-20 md:py-24 text-center scroll-mt-24">
-                <p className="font-mono text-sm text-accent">What’s Next?</p>
+                <p className="font-mono text-sm text-accent dark:text-accent">What’s Next?</p>
                 <h2 className="text-5xl font-bold text-primary mt-4">Get In Touch</h2>
                 <div className="mt-8 flex justify-center space-x-4">
                   <Button asChild size="lg" variant="outline" className="font-mono text-sm border-accent text-accent hover:bg-accent/10 hover:text-accent">
@@ -353,5 +353,7 @@ export default function Home() {
     </div>
   );
 }
+
+    
 
     
