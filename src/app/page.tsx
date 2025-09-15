@@ -1,4 +1,5 @@
 
+
 import Image from 'next/image';
 import {
   Card,
@@ -19,11 +20,11 @@ import { ThemeToggle } from '@/components/theme-toggle';
 import { Spotlight } from '@/components/spotlight';
 
 const socialIcons: { [key: string]: React.ReactNode } = {
-  GitHub: <Github className="size-5" />,
-  LinkedIn: <Linkedin className="size-5" />,
+  Github: <Github className="size-5" />,
+  Linkedin: <Linkedin className="size-5" />,
   Twitter: <Twitter className="size-5" />,
   Code: <Code className="size-5" />,
-  Resume: <FileText className="size-5" />,
+  FileText: <FileText className="size-5" />,
   Mail: <Mail className="size-5" />,
   Phone: <Phone className="size-5" />,
   Book: <Book className="size-5" />,
