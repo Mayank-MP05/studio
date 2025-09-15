@@ -9,10 +9,14 @@ import { Menu, X } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "./ui/sheet";
 import { ThemeToggle } from "./theme-toggle";
 
+const emojis = ['👋', '👨‍💻', '🚀', '⚡️', '💡'];
+
 export function SiteHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("");
+  const [currentEmojiIndex, setCurrentEmojiIndex] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,7 +33,20 @@ export function SiteHeader() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    const emojiInterval = setInterval(() => {
+      setIsAnimating(true);
+      setTimeout(() => {
+        setCurrentEmojiIndex((prevIndex) => (prevIndex + 1) % emojis.length);
+        setIsAnimating(false);
+      }, 500); // half of interval for fade out
+    }, 3000);
+
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+      clearInterval(emojiInterval);
+    };
   }, []);
 
   return (
@@ -45,7 +62,14 @@ export function SiteHeader() {
           className="flex items-center justify-center text-xl font-bold font-headline text-primary tracking-tighter"
         >
           <div className="size-8 bg-accent text-primary-foreground rounded-md flex items-center justify-center mr-2 font-mono text-lg">
-            M
+            <span
+                className={cn(
+                  "transition-all duration-500",
+                  isAnimating ? "opacity-0 scale-50" : "opacity-100 scale-100"
+                )}
+              >
+                {emojis[currentEmojiIndex]}
+              </span>
           </div>
           <span className="hidden sm:inline">Mayank_MP5</span>
         </a>
