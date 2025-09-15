@@ -4,6 +4,10 @@ import { useState, useEffect } from "react";
 import { ThemeToggle } from "./theme-toggle";
 import { cn } from "@/lib/utils";
 import { navLinks } from "@/lib/data";
+import { Button } from "./ui/button";
+import { Menu } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+
 
 export function SiteHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,7 +23,7 @@ export function SiteHeader() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 w-full transition-all duration-300",
+        "sticky top-0 z-50 w-full transition-all duration-300 lg:hidden",
         isScrolled
           ? "border-b bg-background/80 backdrop-blur-lg"
           : "bg-background/0"
@@ -34,19 +38,30 @@ export function SiteHeader() {
             B
           </div>
         </a>
-        <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-foreground/60 hover:text-foreground transition-colors flex items-center gap-2"
-            >
-              <span className="text-accent">{`0${link.id}.`}</span>
-              {link.name}
-            </a>
-          ))}
-        </nav>
-        <ThemeToggle />
+        <div className="flex items-center gap-2">
+          <ThemeToggle />
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="outline" size="icon" className="md:hidden">
+                <Menu className="size-5" />
+                <span className="sr-only">Toggle Menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right">
+              <nav className="grid gap-6 text-lg font-medium mt-16">
+                {navLinks.map((link) => (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    className="text-foreground hover:text-foreground/80 transition-colors"
+                  >
+                    {link.name}
+                  </a>
+                ))}
+              </nav>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </header>
   );
