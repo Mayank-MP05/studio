@@ -14,14 +14,6 @@ import { Footer } from '@/components/footer';
 import { projects, navLinks, socialLinks } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ArrowUpRight, Github, Linkedin, Twitter, Code, ExternalLink } from 'lucide-react';
-import {
-  FigmaIcon,
-  NextjsIcon,
-  NodejsIcon,
-  ReactIcon,
-  TailwindIcon,
-  TypescriptIcon,
-} from '@/components/icons';
 
 const socialIcons: { [key: string]: React.ReactNode } = {
   GitHub: <Github className="size-5" />,
@@ -34,11 +26,11 @@ export default function Home() {
   const aboutImage = PlaceHolderImages.find((img) => img.id === 'about-image');
   
   return (
-    <div className="flex min-h-dvh bg-background font-body text-foreground">
+    <div className="flex flex-col min-h-dvh bg-background font-body text-foreground">
       <SiteHeader />
-      <main className="flex-1">
+      <div className="flex-1">
         <div className="container mx-auto px-6 sm:px-12 md:px-24">
-          <div className="grid lg:grid-cols-2 gap-4 lg:gap-16 min-h-screen">
+          <div className="grid lg:grid-cols-2 gap-4 lg:gap-16">
             <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
               <div>
                 <h1 className="text-4xl sm:text-5xl font-bold text-primary tracking-tight font-headline">
@@ -86,7 +78,7 @@ export default function Home() {
             <div className="lg:py-24">
               {/* About Section */}
               <section id="about" className="pt-24 lg:pt-0 pb-20 md:pb-24 scroll-mt-24">
-                <div className="flex items-center mb-8">
+                <div className="flex items-center mb-8 lg:hidden">
                   <h2 className="text-sm font-bold uppercase tracking-widest text-primary mr-4">About</h2>
                   <div className="h-px flex-grow bg-border"></div>
                 </div>
@@ -98,7 +90,7 @@ export default function Home() {
               </section>
 
               {/* Projects Section */}
-              <section id="projects" className="py-20 md:py-24">
+              <section id="projects" className="py-20 md:py-24 scroll-mt-24">
                  <div className="flex items-center mb-8 lg:hidden">
                   <h2 className="text-sm font-bold uppercase tracking-widest text-primary mr-4">Projects</h2>
                   <div className="h-px flex-grow bg-border"></div>
@@ -115,7 +107,7 @@ export default function Home() {
                            alt={PlaceHolderImages.find(p => p.id === project.image)!.description}
                            width={200}
                            height={112}
-                           className="rounded border-2 border-border/20 transition group-hover/card:border-accent"
+                           className="rounded border-2 border-border/20 transition group-hover/card:border-accent w-full sm:w-auto"
                            data-ai-hint={PlaceHolderImages.find(p => p.id === project.image)!.imageHint}
                         />
                       )}
@@ -154,7 +146,7 @@ export default function Home() {
                 </div>
               </section>
                 {/* Contact Section */}
-              <section id="contact" className="py-20 md:py-24 text-center">
+              <section id="contact" className="py-20 md:py-24 text-center scroll-mt-24">
                 <p className="font-mono text-sm text-accent">04. What’s Next?</p>
                 <h2 className="text-5xl font-bold text-primary mt-4">Get In Touch</h2>
                 <p className="mt-4 max-w-xl mx-auto text-muted-foreground">
@@ -169,7 +161,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </main>
+      </div>
       <Footer />
     </div>
   );
