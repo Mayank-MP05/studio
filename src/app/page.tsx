@@ -278,11 +278,11 @@ export default function Home() {
                     <li key={index} className="mb-12">
                       <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                         <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-100 dark:lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                        <div className="z-10 sm:order-2 sm:col-span-6">
+                        <div className="z-10 sm:col-span-8">
                           <h3>
                             <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-baseline font-medium leading-tight text-primary hover:text-accent focus-visible:text-accent group/link text-base">
                                 <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:block"></span>
-                                <span>{project.title} <ArrowUpRight className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" /></span>
+                                <span>{project.emoji} {project.title} <ArrowUpRight className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" /></span>
                             </a>
                           </h3>
                           <p className="mt-2 text-sm leading-normal text-muted-foreground">{project.description}</p>
@@ -302,16 +302,6 @@ export default function Home() {
                             ))}
                           </ul>
                         </div>
-                        {PlaceHolderImages.find(p => p.id === project.image) && (
-                          <Image
-                             src={PlaceHolderImages.find(p => p.id === project.image)!.imageUrl}
-                             alt={PlaceHolderImages.find(p => p.id === project.image)!.description}
-                             width={200}
-                             height={48}
-                             className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                             data-ai-hint={PlaceHolderImages.find(p => p.id === project.image)!.imageHint}
-                          />
-                        )}
                       </div>
                     </li>
                   ))}
@@ -353,6 +343,8 @@ export default function Home() {
     </div>
   );
 }
+
+    
 
     
 

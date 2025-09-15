@@ -29,6 +29,7 @@ export const projects = [
     tech: ["React", "Node.js", "Express", "Huffman Coding"],
     liveUrl: "https://hulk-huffman-compressor.netlify.app/",
     githubUrl: "https://github.com/Mayank-MP05/Hulk-Compressor-Frontend",
+    emoji: "🦸",
   },
   {
     title: "Team Molequilzer",
@@ -37,6 +38,7 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://team-molequilizer.web.app/",
     githubUrl: "https://github.com/Mayank-MP05/molequilizer",
+    emoji: "⚗️",
   },
   {
     title: "Marathi Recognition",
@@ -44,6 +46,7 @@ export const projects = [
     image: "project-marathi",
     tech: ["Python", "Flask", "Deep Learning", "ConvNet"],
     githubUrl: "https://github.com/Mayank-MP05/Marathi-Letter-Recognition-ConvNet",
+    emoji: "✍️",
   },
   {
     title: "Face Recognition System",
@@ -51,5 +54,8 @@ export const projects = [
     image: "project-face",
     tech: ["Python", "Deep Learning", "Machine Learning"],
     githubUrl: "https://github.com/Mayank-MP05/Deep-Learning-Face-Recognition-ML-DL",
+    emoji: "😊",
   },
 ];
+
+    
