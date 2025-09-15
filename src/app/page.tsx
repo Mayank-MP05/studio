@@ -188,6 +188,12 @@ export default function Home() {
                             </a>
                           </h3>
                           <p className="mt-2 text-sm leading-normal text-muted-foreground">{project.description}</p>
+                           {project.githubUrl && (
+                            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center text-sm font-medium text-primary hover:text-accent">
+                              <Github className="mr-2 h-4 w-4" />
+                              GitHub
+                            </a>
+                          )}
                           <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
                             {project.tech.map((tech) => (
                               <li key={tech} className="mr-1.5 mt-2">

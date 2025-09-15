@@ -1,3 +1,4 @@
+
 {
   "placeholderImages": [
     {
@@ -5,6 +6,30 @@
       "description": "A portrait of Brittany Chiang",
       "imageUrl": "https://picsum.photos/seed/bc-portrait/400/400",
       "imageHint": "woman portrait"
+    },
+    {
+      "id": "project-huffman",
+      "description": "Hulk Huffman Compressor project screenshot",
+      "imageUrl": "https://picsum.photos/seed/huffman/600/400",
+      "imageHint": "data compression"
+    },
+    {
+      "id": "project-molequilizer",
+      "description": "Team Molequilizer project screenshot",
+      "imageUrl": "https://picsum.photos/seed/molequilizer/600/400",
+      "imageHint": "chemistry education"
+    },
+    {
+      "id": "project-marathi",
+      "description": "Marathi character recognition project screenshot",
+      "imageUrl": "https://picsum.photos/seed/marathi-ocr/600/400",
+      "imageHint": "letter recognition"
+    },
+    {
+      "id": "project-face",
+      "description": "Face recognition system project screenshot",
+      "imageUrl": "https://picsum.photos/seed/face-rec/600/400",
+      "imageHint": "facial recognition"
     },
     {
       "id": "project-spotify",
