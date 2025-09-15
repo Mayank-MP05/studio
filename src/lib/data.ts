@@ -2,9 +2,10 @@
 
 export const navLinks = [
   { id: 1, name: "About", href: "#about" },
-  { id: 2, name: "Highlights", href: "#highlights" },
-  { id: 3, name: "Projects", href: "/projects" },
-  { id: 4, name: "Contact", href: "#contact" },
+  { id: 2, name: "Experience", href: "#experience" },
+  { id: 3, name: "Highlights", href: "#highlights" },
+  { id: 4, name: "Projects", href: "#projects" },
+  { id: 5, name: "Contact", href: "#contact" },
 ];
 
 export const socialLinks = [
@@ -30,7 +31,7 @@ export const projects = [
     githubUrl: "https://github.com/Mayank-MP05/Hulk-Compressor-Frontend",
   },
   {
-    title: "Team Molequilizer",
+    title: "Team Molequilzer",
     description: "Project Built for all india SIH's Toycathon 2021 built in plain stack but feature rich around problem statement of balancing chemical reaction visually and later integrated periodic table",
     image: "project-molequilizer",
     tech: ["HTML", "CSS", "JavaScript"],

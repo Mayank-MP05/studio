@@ -84,6 +84,106 @@ export default function Home() {
                 </div>
               </section>
 
+              <section id="experience" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Work experience">
+                <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-background/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+                  <h2 className="text-sm font-bold uppercase tracking-widest text-primary lg:sr-only">Experience</h2>
+                </div>
+                <div>
+                  <ol className="group/list">
+                    <li className="mb-12">
+                      <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                        <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                        <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground sm:col-span-2" aria-label="2025 to Present">Jul 2025 — Present</header>
+                        <div className="z-10 sm:col-span-6">
+                          <h3 className="font-medium leading-snug text-primary">
+                            <div>
+                                <span className="inline-block font-medium text-primary">Software Engineer 2 · Wint Wealth</span>
+                            </div>
+                          </h3>
+                          <p className="mt-2 text-sm leading-normal text-muted-foreground">Bengaluru, Karnataka, India</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="mb-12">
+                      <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                        <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                        <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground sm:col-span-2" aria-label="2022 to 2025">Apr 2024 — Jul 2025</header>
+                        <div className="z-10 sm:col-span-6">
+                          <h3 className="font-medium leading-snug text-primary">
+                            <div>
+                                <span className="inline-block font-medium text-primary">Software Engineer 2 · Fibe.India (Formerly EarlySalary)</span>
+                            </div>
+                          </h3>
+                          <p className="mt-2 text-sm leading-normal text-muted-foreground">
+                            <ul className="list-disc space-y-2 pl-4">
+                                <li>Spearheaded end-to-end development of a loan platform (LAMF), building scalable microservices using Java, Spring Boot, and AWS, while collaborating across teams to deliver business-critical features.</li>
+                                <li>Led the design of a document generation engine using dynamic templates to streamline workflows and reduce dependency on manual interventions.</li>
+                                <li>Built secure, modular frontend interfaces for banking journeys using React and Redux, delivering smooth user experiences and improving feature reliability.</li>
+                                <li>Owned core services from design to production with a strong focus on system design, observability, and deployment automation.</li>
+                                <li>Contributed to engineering culture through code reviews, architecture discussions, and mentoring junior developers in scalable backend practices.</li>
+                            </ul>
+                          </p>
+                           <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
+                                <li className="mr-1.5 mt-2">
+                                <Badge variant="secondary" className="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium leading-5 text-accent ">React.js</Badge>
+                                </li>
+                                <li className="mr-1.5 mt-2">
+                                <Badge variant="secondary" className="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium leading-5 text-accent ">Next.js</Badge>
+                                </li>
+                                <li className="mr-1.5 mt-2">
+                                <Badge variant="secondary" className="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium leading-5 text-accent ">Java</Badge>
+                                </li>
+                                <li className="mr-1.5 mt-2">
+                                <Badge variant="secondary" className="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium leading-5 text-accent ">Spring Boot</Badge>
+                                </li>
+                                 <li className="mr-1.5 mt-2">
+                                <Badge variant="secondary" className="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium leading-5 text-accent ">AWS</Badge>
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+                    </li>
+                     <li className="mb-12">
+                      <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                        <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                        <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground sm:col-span-2" aria-label="2022 to 2024">Jun 2022 — Apr 2024</header>
+                        <div className="z-10 sm:col-span-6">
+                          <h3 className="font-medium leading-snug text-primary">
+                            <div>
+                                <span className="inline-block font-medium text-primary">Software Engineer · Fibe.India</span>
+                            </div>
+                          </h3>
+                           <p className="mt-2 text-sm leading-normal text-muted-foreground">
+                            <ul className="list-disc space-y-2 pl-4">
+                                <li>Developed and maintained backend services using Spring Boot and MySQL.</li>
+                                <li>Collaborated with cross-functional teams to deliver features in fast-paced release cycles, enabling consistent delivery and quick feedback loops.</li>
+                                <li>Wrote comprehensive unit and integration tests to improve code reliability and reduce regressions during scale.</li>
+                            </ul>
+                          </p>
+                          <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
+                                <li className="mr-1.5 mt-2">
+                                <Badge variant="secondary" className="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium leading-5 text-accent ">React.js</Badge>
+                                </li>
+                                <li className="mr-1.5 mt-2">
+                                <Badge variant="secondary" className="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium leading-5 text-accent ">Next.js</Badge>
+                                </li>
+                                <li className="mr-1.5 mt-2">
+                                <Badge variant="secondary" className="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium leading-5 text-accent ">Java</Badge>
+                                </li>
+                                <li className="mr-1.5 mt-2">
+                                <Badge variant="secondary" className="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium leading-5 text-accent ">Spring Boot</Badge>
+                                </li>
+                                 <li className="mr-1.5 mt-2">
+                                <Badge variant="secondary" className="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium leading-5 text-accent ">MySQL</Badge>
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+              </section>
+
               <section id="highlights" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Highlights">
                  <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-background/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
                   <h2 className="text-sm font-bold uppercase tracking-widest text-primary lg:sr-only">Highlights</h2>
