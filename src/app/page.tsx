@@ -43,7 +43,7 @@ export default function Home() {
                   Mayank Pachpande
                 </h1>
                 <h2 className="mt-3 text-lg font-medium text-primary tracking-tight font-headline">
-                  Software Development Engineer
+                  Software Development Engineer 2
                 </h2>
                 <nav className="hidden lg:block mt-12">
                   <ul className="w-max">
