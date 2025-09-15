@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "about-image",
+      "description": "A portrait of Brittany Chiang",
+      "imageUrl": "https://picsum.photos/seed/bc-portrait/400/400",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "project-spotify",
+      "description": "Screenshot of a Spotify profile application",
+      "imageUrl": "https://picsum.photos/seed/spotify-app/600/400",
+      "imageHint": "music app"
+    },
+    {
+      "id": "project-v4",
+      "description": "Screenshot of a personal portfolio website",
+      "imageUrl": "https://picsum.photos/seed/portfolio-v4/600/400",
+      "imageHint": "website design"
+    },
+    {
+      "id": "project-halcyon",
+      "description": "Screenshot of a dark blue code editor theme",
+      "imageUrl": "https://picsum.photos/seed/halcyon-theme/600/400",
+      "imageHint": "code editor"
+    }
+  ]
 }
