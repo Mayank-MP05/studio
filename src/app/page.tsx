@@ -82,9 +82,7 @@ export default function Home() {
                 </div>
                 <div>
                     <ul className="list-none space-y-4 text-muted-foreground">
-                        <li>⇒ Experienced Javascript❤️ SDE Developer, With experience of working in a FinTech startup</li>
-                        <li>⇒ Interested in Full Stack Developement and Startups</li>
-                        <li>⇒ Worked mostly on Web Dev and Machine Learning Projects</li>
+                        <li>Results-driven Backend Engineer with 3+ years of experience specializing in designing and deploying high-throughput microservices. Proven ability to reduce system latency by 95% and cut time-to-market by over 3 weeks, directly contributing to significant revenue growth. Expertise in Java, Spring Boot, AWS, and distributed systems architecture.</li>
                         <li>⇒ Hobbies - Coding, Video Editing, Memes</li>
                     </ul>
                 </div>
