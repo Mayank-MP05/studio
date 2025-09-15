@@ -1,14 +1,22 @@
+
 export const navLinks = [
-  { id: 1, name: "About", href: "#about" },
-  { id: 2, name: "Projects", href: "#projects" },
-  { id: 3, name: "Contact", href: "#contact" },
+  { id: 1, name: "Home", href: "#" },
+  { id: 2, name: "About", href: "#about" },
+  { id: 3, name: "Projects", href: "#projects" },
+  { id: 4, name: "Contact", href: "#contact" },
 ];
 
 export const socialLinks = [
-  { name: "GitHub", url: "https://github.com/bchiang7" },
-  { name: "LinkedIn", url: "https://www.linkedin.com/in/brittany-chiang/" },
-  { name: "Twitter", url: "https://twitter.com/bchiang7" },
-  { name: "Code", url: "https://codepen.io/bchiang7" }
+  { name: 'Resume', url: 'https://drive.google.com/drive/folders/1auC70rGIj5GXUvxJmCDl8_6NskvOeJlK?usp=drive_link', icon: 'FileText' },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/mayank-mp5/', icon: 'Linkedin' },
+  { name: 'GitHub', url: 'https://github.com/Mayank-MP05', icon: 'Github' },
+  { name: 'Mail', url: 'mailto:mayank5pande@gmail.com', icon: 'Mail' },
+  { name: 'Codechef', url: 'https://www.codechef.com/users/mayank_mp5', icon: 'Code' },
+  { name: 'Codeforces', url: 'https://codeforces.com/profile/Mayank_MP5', icon: 'Code' },
+  { name: 'Call', url: 'tel:8830764295', icon: 'Phone' },
+  { name: 'Medium', url: 'https://medium.com/@mayank5pande', icon: 'Book' },
+  { name: 'Devfolio', url: 'https://devfolio.co/@mayank_mp5', icon: 'FileCode' },
+  { name: 'Twitter', url: 'https://twitter.com/Mayank_MP5', icon: 'Twitter' },
 ];
 
 export const projects = [

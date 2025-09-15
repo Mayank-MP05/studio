@@ -9,8 +9,8 @@ const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space
 const firaCode = Fira_Code({ subsets: ['latin'], variable: '--font-fira-code'});
 
 export const metadata: Metadata = {
-  title: 'Brittany Chiang',
-  description: 'A reimagined portfolio for Brittany Chiang, created with Next.js and Firebase Studio.',
+  title: 'Mayank Pachpande',
+  description: 'Portfolio of Mayank Pachpande, Software Development Engineer.',
 };
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
-          enableSystem
+          enableSystem={false}
           disableTransitionOnChange
         >
           {children}
