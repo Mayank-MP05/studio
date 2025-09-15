@@ -120,7 +120,7 @@ export default function Home() {
                                 <span className="inline-block font-medium text-primary">Software Engineer 2 · Fibe.India (Formerly EarlySalary)</span>
                             </div>
                           </h3>
-                          <p className="mt-2 text-sm leading-normal text-muted-foreground">
+                          <div className="mt-2 text-sm leading-normal text-muted-foreground">
                             <ul className="list-disc space-y-2 pl-4">
                                 <li>Spearheaded end-to-end development of a loan platform (LAMF), building scalable microservices using Java, Spring Boot, and AWS, while collaborating across teams to deliver business-critical features.</li>
                                 <li>Led the design of a document generation engine using dynamic templates to streamline workflows and reduce dependency on manual interventions.</li>
@@ -128,7 +128,7 @@ export default function Home() {
                                 <li>Owned core services from design to production with a strong focus on system design, observability, and deployment automation.</li>
                                 <li>Contributed to engineering culture through code reviews, architecture discussions, and mentoring junior developers in scalable backend practices.</li>
                             </ul>
-                          </p>
+                          </div>
                            <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
                                 <li className="mr-1.5 mt-2">
                                 <Badge variant="secondary" className="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium leading-5 text-accent ">React.js</Badge>
@@ -159,13 +159,13 @@ export default function Home() {
                                 <span className="inline-block font-medium text-primary">Software Engineer · Fibe.India</span>
                             </div>
                           </h3>
-                           <p className="mt-2 text-sm leading-normal text-muted-foreground">
+                           <div className="mt-2 text-sm leading-normal text-muted-foreground">
                             <ul className="list-disc space-y-2 pl-4">
                                 <li>Developed and maintained backend services using Spring Boot and MySQL.</li>
                                 <li>Collaborated with cross-functional teams to deliver features in fast-paced release cycles, enabling consistent delivery and quick feedback loops.</li>
                                 <li>Wrote comprehensive unit and integration tests to improve code reliability and reduce regressions during scale.</li>
                             </ul>
-                          </p>
+                          </div>
                           <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
                                 <li className="mr-1.5 mt-2">
                                 <Badge variant="secondary" className="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium leading-5 text-accent ">React.js</Badge>
@@ -346,9 +346,3 @@ export default function Home() {
     </Spotlight>
   );
 }
-
-    
-
-    
-
-    
