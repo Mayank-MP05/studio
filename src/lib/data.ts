@@ -9,9 +9,9 @@ export const navLinks = [
 ];
 
 export const socialLinks = [
-  { name: 'Resume', url: 'https://drive.google.com/drive/folders/1auC70rGIj5GXUvxJmCDl8_6NskvOeJlK?usp=drive_link', icon: 'FileText' },
   { name: 'LinkedIn', url: 'https://www.linkedin.com/in/mayank-mp5/', icon: 'Linkedin' },
   { name: 'GitHub', url: 'https://github.com/Mayank-MP05', icon: 'Github' },
+  { name: 'Resume', url: 'https://drive.google.com/drive/folders/1auC70rGIj5GXUvxJmCDl8_6NskvOeJlK?usp=drive_link', icon: 'FileText' },
   { name: 'Mail', url: 'mailto:mayank5pande@gmail.com', icon: 'Mail' },
   { name: 'Codechef', url: 'https://www.codechef.com/users/mayank_mp5', icon: 'Code' },
   { name: 'Codeforces', url: 'https://codeforces.com/profile/Mayank_MP5', icon: 'Code' },
