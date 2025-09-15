@@ -15,6 +15,7 @@ import { Footer } from '@/components/footer';
 import { projects, navLinks, socialLinks } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ArrowUpRight, Github, Linkedin, Twitter, Code, ExternalLink, FileText, Mail, Phone, Book, FileCode, Star, Trophy, Award, PenTool } from 'lucide-react';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 const socialIcons: { [key: string]: React.ReactNode } = {
   GitHub: <Github className="size-5" />,
@@ -34,6 +35,9 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-dvh bg-background font-body text-foreground">
       <SiteHeader />
+      <div className="hidden lg:block fixed top-6 right-6 z-50">
+        <ThemeToggle />
+      </div>
       <div className="flex-1">
         <div className="container mx-auto px-6 sm:px-12 md:px-24">
           <main className="lg:flex">
@@ -349,3 +353,5 @@ export default function Home() {
     </div>
   );
 }
+
+    

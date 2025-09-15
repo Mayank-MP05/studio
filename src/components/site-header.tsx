@@ -7,6 +7,7 @@ import { navLinks } from "@/lib/data";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "./ui/sheet";
+import { ThemeToggle } from "./theme-toggle";
 
 export function SiteHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -49,6 +50,7 @@ export function SiteHeader() {
           <span className="hidden sm:inline">Mayank_MP5</span>
         </a>
         <div className="flex items-center gap-2">
+          <ThemeToggle />
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="text-accent lg:hidden">
@@ -84,3 +86,5 @@ export function SiteHeader() {
     </header>
   );
 }
+
+    
