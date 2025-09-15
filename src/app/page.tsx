@@ -45,10 +45,6 @@ export default function Home() {
                 <h2 className="mt-3 text-lg font-medium text-primary tracking-tight font-headline">
                   Software Development Engineer
                 </h2>
-                <div className="mt-4 max-w-xs text-muted-foreground space-y-2">
-                    <p><a href="/projects" className="font-medium text-primary hover:text-accent">Projects 🤩</a></p>
-                    <p><a href="/explore" className="font-medium text-primary hover:text-accent">Explore 🧐</a></p>
-                </div>
                 <nav className="hidden lg:block mt-12">
                   <ul className="w-max">
                     {navLinks.map((link) => (
