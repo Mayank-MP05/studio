@@ -25,7 +25,6 @@ export const projects = [
   {
     title: "Hulk Huffman Compressor",
     description: "Huffman Compression is commonly used for lossless data compression.In this project,Image and Text Data Compression and Encryption using Huffman technique of freq tree.",
-    image: "project-huffman",
     tech: ["React", "Node.js", "Express", "Huffman Coding"],
     liveUrl: "https://hulk-huffman-compressor.netlify.app/",
     githubUrl: "https://github.com/Mayank-MP05/Hulk-Compressor-Frontend",
@@ -34,7 +33,6 @@ export const projects = [
   {
     title: "Team Molequilzer",
     description: "Project Built for all india SIH's Toycathon 2021 built in plain stack but feature rich around problem statement of balancing chemical reaction visually and later integrated periodic table",
-    image: "project-molequilizer",
     tech: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://team-molequilizer.web.app/",
     githubUrl: "https://github.com/Mayank-MP05/molequilizer",
@@ -43,15 +41,13 @@ export const projects = [
   {
     title: "Marathi Recognition",
     description: "Project uses Deep Learning based character recognition. The flask web server is used to minimize complexities.The drawn character on the Canvas will be recognized",
-    image: "project-marathi",
     tech: ["Python", "Flask", "Deep Learning", "ConvNet"],
     githubUrl: "https://github.com/Mayank-MP05/Marathi-Letter-Recognition-ConvNet",
     emoji: "✍️",
   },
   {
     title: "Face Recognition System",
-    description: "Huffman Compression is commonly used for lossless data compression.In this project,Image and Text Data Compression and Encryption using Huffman technique of freq tree.",
-    image: "project-face",
+    description: "A Face Recognition system built with Python and leveraging Deep Learning techniques for accurate facial identification.",
     tech: ["Python", "Deep Learning", "Machine Learning"],
     githubUrl: "https://github.com/Mayank-MP05/Deep-Learning-Face-Recognition-ML-DL",
     emoji: "😊",

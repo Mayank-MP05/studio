@@ -280,7 +280,7 @@ export default function Home() {
                         <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-100 dark:lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
                         <div className="z-10 sm:col-span-8">
                           <h3>
-                            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-baseline font-medium leading-tight text-primary hover:text-accent focus-visible:text-accent group/link text-base">
+                            <a href={project.liveUrl || project.githubUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-baseline font-medium leading-tight text-primary hover:text-accent focus-visible:text-accent group/link text-base">
                                 <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:block"></span>
                                 <span>{project.emoji} {project.title} <ArrowUpRight className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" /></span>
                             </a>
