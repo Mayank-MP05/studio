@@ -213,7 +213,7 @@ export default function Home() {
                   ))}
                   </ul>
                   <div className="mt-12">
-                    <a href="#" className="inline-flex items-center font-medium leading-tight text-primary font-semibold text-primary group">
+                    <a href="https://github.com/Mayank-MP05" target="_blank" rel="noopener noreferrer" className="inline-flex items-center font-medium leading-tight text-primary font-semibold text-primary group">
                       <span>
                         <span className="border-b border-transparent pb-px transition group-hover:border-accent motion-reduce:transition-none">View Full Project </span>
                         <span className="whitespace-nowrap">
