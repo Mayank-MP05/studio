@@ -39,7 +39,7 @@ export const projects = [
     emoji: "⚗️",
   },
   {
-    title: "Marathi Recognition",
+    title: "Marathi Character Recognition",
     description: "Project uses Deep Learning based character recognition. The flask web server is used to minimize complexities.The drawn character on the Canvas will be recognized",
     tech: ["Python", "Flask", "Deep Learning", "ConvNet"],
     githubUrl: "https://github.com/Mayank-MP05/Marathi-Letter-Recognition-ConvNet",
