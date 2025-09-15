@@ -5,16 +5,17 @@ import { ThemeToggle } from "./theme-toggle";
 import { cn } from "@/lib/utils";
 import { navLinks } from "@/lib/data";
 import { Button } from "./ui/button";
-import { Menu } from "lucide-react";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Menu, X } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from "./ui/sheet";
 
 
 export function SiteHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      setIsScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -23,41 +24,46 @@ export function SiteHeader() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 w-full transition-all duration-300 lg:hidden",
-        isScrolled
-          ? "border-b bg-background/80 backdrop-blur-lg"
-          : "bg-background/0"
+        "sticky top-0 z-50 w-full transition-shadow duration-300 lg:hidden",
+        isScrolled ? "shadow-lg bg-background/80 backdrop-blur-lg" : ""
       )}
     >
-      <div className="container mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
+      <div className="container mx-auto px-6 h-20 flex items-center justify-between">
         <a
-          href="#home"
-          className="flex items-center justify-center text-xl font-bold font-headline text-primary dark:text-primary-foreground tracking-tighter"
+          href="#"
+          className="flex items-center justify-center text-xl font-bold font-headline text-primary tracking-tighter"
         >
-          <div className="size-8 bg-primary dark:bg-primary-foreground text-primary-foreground dark:text-primary rounded-md flex items-center justify-center mr-2">
+          <div className="size-8 bg-accent text-primary-foreground rounded-md flex items-center justify-center mr-2 font-mono text-lg">
             B
           </div>
         </a>
         <div className="flex items-center gap-2">
-          <ThemeToggle />
-          <Sheet>
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button variant="outline" size="icon" className="md:hidden">
-                <Menu className="size-5" />
+              <Button variant="ghost" size="icon" className="md:hidden text-accent">
+                <Menu className="size-7" />
                 <span className="sr-only">Toggle Menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right">
-              <nav className="grid gap-6 text-lg font-medium mt-16">
-                {navLinks.map((link) => (
-                  <a
-                    key={link.name}
-                    href={link.href}
-                    className="text-foreground hover:text-foreground/80 transition-colors"
-                  >
-                    {link.name}
-                  </a>
-                ))}
+            <SheetContent side="right" className="w-[75vw] bg-background">
+              <nav className="flex flex-col items-center justify-center h-full">
+                <ol className="list-[auto] list-inside text-center space-y-8">
+                  {navLinks.map((link, i) => (
+                    <li key={link.id} className="text-lg text-primary font-mono marker:text-accent marker:mr-2">
+                      <SheetClose asChild>
+                        <a
+                          href={link.href}
+                          className="hover:text-accent transition-colors"
+                        >
+                          {link.name}
+                        </a>
+                      </SheetClose>
+                    </li>
+                  ))}
+                </ol>
+                <Button asChild size="lg" variant="outline" className="font-mono text-sm border-accent text-accent hover:bg-accent/10 hover:text-accent mt-12">
+                  <a href="/resume.pdf" target="_blank">Resume</a>
+                </Button>
               </nav>
             </SheetContent>
           </Sheet>
