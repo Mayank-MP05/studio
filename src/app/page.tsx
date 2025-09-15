@@ -79,7 +79,7 @@ export default function Home() {
                 <div>
                     <ul className="list-none space-y-4 text-muted-foreground">
                         <li>Results-driven Backend Engineer with 3+ years of experience specializing in designing and deploying high-throughput microservices. Proven ability to reduce system latency by 95% and cut time-to-market by over 3 weeks, directly contributing to significant revenue growth. Expertise in Java, Spring Boot, AWS, and distributed systems architecture.</li>
-                        <li>⇒ Hobbies - Coding, Video Editing, Memes</li>
+                        <li>Hobbies - Video Editing, Memes, financial markets</li>
                     </ul>
                 </div>
               </section>
