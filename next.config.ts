@@ -28,8 +28,8 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
-      {
-        protocol: 'https_val',
+       {
+        protocol: 'https',
         hostname: 'mayank5pande.com',
         port: '',
         pathname: '/**',
