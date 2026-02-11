@@ -84,10 +84,17 @@ export default function Home() {
                   <h2 className="text-sm font-bold uppercase tracking-widest text-primary lg:sr-only">About</h2>
                 </div>
                 <div>
-                    <ul className="list-none space-y-4 text-muted-foreground">
-                        <li>Results-driven Backend Engineer with 3+ years of experience specializing in designing and deploying high-throughput microservices. Proven ability to reduce system latency by 95% and cut time-to-market by over 3 weeks, directly contributing to significant revenue growth. Expertise in Java, Spring Boot, AWS, and distributed systems architecture.</li>
-                        <li>I am also interested Financial Markets, Startups, Video Editing and Memes</li>
-                    </ul>
+                  <ul className="list-none space-y-4 text-muted-foreground">
+                    <li>
+                      Frontend-focused Full-Stack Engineer with 3+ years of experience building scalable, high-performance web applications serving 50k+ daily users. 
+                      I specialize in React, TypeScript, and modern frontend architecture — designing reusable component systems, optimizing rendering performance, 
+                      and translating complex product workflows into intuitive, accessible user experiences. 
+                      Strong foundation in backend systems (Node.js, Java, AWS) enabling end-to-end ownership of production systems.
+                    </li>
+                    <li>
+                      Interested in financial markets, startups, product thinking, and building systems that blend performance with great user experience.
+                    </li>
+                  </ul>
                 </div>
               </section>
 
